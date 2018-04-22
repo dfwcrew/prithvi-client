@@ -225,7 +225,7 @@ Contact start
     events = loadEvents();
     for (var i = 0, len = events.length; i < len; i++) {
         console.log(events[i]);
-        plotMarker(lat = events[i]['latitude'], lon = events[i]['longitude'], city = events[i]['city'], title = events[i]['title']);
+        plotMarker(lat = events[i]['latitude'], lon = events[i]['longitude'], city = events[i]['city']+' - year '+events[i]['date'], title =  events[i]['title']);
     }
 </script>
 
